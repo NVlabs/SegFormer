@@ -69,7 +69,7 @@ def get_tr_flops(net, input_shape):
                            net.block4[0].attn.squeeze_ratio,
                            512,
                            net.block4[0].attn.num_heads) * len(net.block4)
-        print('### old PVT ###')
+
     print(stage1 + stage2 + stage3 + stage4)
     flops += stage1 + stage2 + stage3 + stage4
     return flops_to_string(flops), params_to_string(params)
