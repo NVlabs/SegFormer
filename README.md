@@ -42,7 +42,7 @@ tools/dist_test.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /
 
 ## Training
 
-Download [pre-trained weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
+Download [weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
 
 Example: train ```SegFormer-B1``` on ```ADE20K```:
 
