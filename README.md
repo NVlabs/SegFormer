@@ -6,7 +6,7 @@ We use [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tre
 
 <!-- ![image](resources/image.png) -->
 <div align="center">
-  <img src="./resources/image.png, width=200">
+  <img src="./resources/image.png" height="400">
 </div>
 <p align="center">
   Figure 1: Performance of SegFormer-B0 to SegFormer-B5.
