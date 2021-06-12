@@ -5,7 +5,6 @@ from mmcv.cnn import get_model_complexity_info
 from mmcv.cnn.utils.flops_counter import flops_to_string, params_to_string
 
 from mmseg.models import build_segmentor
-from IPython import embed
 import torch
 
 def parse_args():
