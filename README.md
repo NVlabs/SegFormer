@@ -1,6 +1,8 @@
 # SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers
 
-This repo contains the supported code and configuration files to reproduce [SegFormer](https://arxiv.org/abs/2105.15203).
+This repository contains PyTorch evaluation code, training code and pretrained models for [SegFormer](https://arxiv.org/abs/2105.15203).
+
+SegFormer is a simple, efficient and powerful semantic segmentation method, as shown in Figure 1.
 
 We use [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0) as the codebase.
 
