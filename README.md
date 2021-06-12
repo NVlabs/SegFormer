@@ -4,6 +4,15 @@ This repo contains the supported code and configuration files to reproduce [SegF
 
 We use [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0) as the codebase.
 
+<!-- ![image](resources/image.png) -->
+<div align="center">
+  <img src="./resources/image.png, width=200">
+</div>
+<p align="center">
+  Figure 1: Performance of SegFormer-B0 to SegFormer-B5.
+</p>
+
+
 
 ## Install
 
