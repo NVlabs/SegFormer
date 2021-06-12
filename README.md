@@ -1,24 +1,58 @@
 # SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers
 
+This repo contains the supported code and configuration files to reproduce [SegFormer](https://arxiv.org/abs/2105.15203).
+
 We use [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0) as the codebase.
 
 
-## How to install
+## Install
 
-Install according to the guidelines in [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0).
+For install and data preparation, please refer to the guidelines in [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0).
 
-
-## Data preparation
-
-Prepare ADE20K, Cityscapes according to the guidelines in [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0).
 
 ## Evaluation
 
-First, download trained weights from [google drive](https://drive.google.com/file/d/1AbNMxJYzP_JT1BJNtMc2M4REhH1tMZw7/view?usp=sharing). Here we provide weights of SegFormer-B1 on ADE20K.
+Download [trained weights](https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing).
 
-For example, to evaluate SegFormer-B1 on ADE20K on a single node with 8 gpus run:
+Example: evaluate ```SegFormer-B1``` on ```ADE20K```:
 
 ```
-./tools/dist_test.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /path/to/checkpoint_file 8
+# single-gpu testing
+python tools/test.py local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /path/to/checkpoint_file
+
+# multi-gpu testing
+./tools/dist_test.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM>
+
+# multi-gpu, multi-scale testing
+tools/dist_test.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --aug-test
 ```
 
+## Training
+
+Download [pre-trained weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
+
+Example: train ```SegFormer-B1``` on ```ADE20K```:
+
+```
+# single-gpu training
+python tools/train.py local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py 
+
+# multi-gpu training
+./tools/dist_train.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py <GPU_NUM>
+```
+
+## License
+Please check the LICENSE file. SegFormer may be used non-commercially, meaning for research or 
+evaluation purposes only. For business inquiries, please contact 
+[researchinquiries@nvidia.com](mailto:researchinquiries@nvidia.com).
+
+
+## Citing SegFormer
+```
+@article{xie2021segformer,
+  title={SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers},
+  author={Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M and Luo, Ping},
+  journal={arXiv preprint arXiv:2105.15203},
+  year={2021}
+}
+```
