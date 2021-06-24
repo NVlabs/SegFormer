@@ -79,7 +79,7 @@ Here is a demo script to test a single image. More details refer to [MMSegmentat
 python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--device ${DEVICE_NAME}] [--palette-thr ${PALETTE}]
 ```
 
-Example: evaluate ```SegFormer-B1``` on ```CityScapes```: 
+Example: visualize ```SegFormer-B1``` on ```CityScapes```: 
 
 ```shell
 python demo/image_demo.py demo/demo.jpg local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py \
