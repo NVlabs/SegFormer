@@ -9,6 +9,8 @@ from IPython import embed
 @PIPELINES.register_module()
 class AlignedResize(object):
     """Resize images & seg. Align
+    This class is based on ``Resize``, the only difference is 
+    it ensure the long and short sides are divisible by ``size_divisor``.
     """
 
     def __init__(self,
