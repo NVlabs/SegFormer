@@ -71,6 +71,25 @@ python tools/train.py local_configs/segformer/B1/segformer.b1.512x512.ade.160k.p
 ./tools/dist_train.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py <GPU_NUM>
 ```
 
+## Visualize
+
+Here is a demo script to test a single image. More details refer to [MMSegmentation's Doc](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
+
+```shell
+python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--device ${DEVICE_NAME}] [--palette-thr ${PALETTE}]
+```
+
+Example: evaluate ```SegFormer-B1``` on ```CityScapes```: 
+
+```shell
+python demo/image_demo.py demo/demo.jpg local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py \
+/path/to/checkpoint_file --device cuda:0 --palette cityscapes
+```
+
+
+
+
+
 ## License
 Please check the LICENSE file. SegFormer may be used non-commercially, meaning for research or 
 evaluation purposes only. For business inquiries, please contact 
