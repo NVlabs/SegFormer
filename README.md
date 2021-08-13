@@ -23,6 +23,9 @@ SegFormer is a simple, efficient and powerful semantic segmentation method, as s
 
 We use [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0) as the codebase.
 
+🔥🔥 SegFormer is on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation/tree/master/configs/segformer). 🔥🔥 
+
+
 ## Installation
 
 For install and data preparation, please refer to the guidelines in [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0).
