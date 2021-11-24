@@ -15,7 +15,7 @@
 
 SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers.<br>
 [Enze Xie](https://xieenze.github.io/), [Wenhai Wang](https://whai362.github.io/), [Zhiding Yu](https://chrisding.github.io/), [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/), [Jose M. Alvarez](https://rsu.data61.csiro.au/people/jalvarez/), and [Ping Luo](http://luoping.me/).<br>
-Technical Report 2021.
+NeurIPS 2021.
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for [SegFormer](https://arxiv.org/abs/2105.15203).
 
