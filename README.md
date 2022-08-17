@@ -45,7 +45,7 @@ cd SegFormer && pip install -e . --user
 
 ## Evaluation
 
-Download [trained weights](https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing).
+Download `trained weights`. [google drive](https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing) | [onedrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/EvOn3l1WyM5JpnMQFSEO5b8B7vrHw9kDaJGII-3N9KNhrg?e=cpydzZ)
 
 Example: evaluate ```SegFormer-B1``` on ```ADE20K```:
 
@@ -62,7 +62,12 @@ tools/dist_test.sh local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py /
 
 ## Training
 
-Download [weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
+Download `weights` 
+(
+[google drive](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) | 
+[onedrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/Ept_oetyUGFCsZTKiL_90kUBy5jmPV65O5rJInsnRCDWJQ?e=CvGohw)
+) 
+pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
 
 Example: train ```SegFormer-B1``` on ```ADE20K```:
 
