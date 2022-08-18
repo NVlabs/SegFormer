@@ -45,8 +45,11 @@ cd SegFormer && pip install -e . --user
 
 ## Evaluation
 
-Download `trained weights`. [google drive](https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing) | 
+Download `trained weights`. 
+(
+[google drive](https://drive.google.com/drive/folders/1GAku0G0iR9DsBxCbfENWMJ27c5lYUeQA?usp=sharing) | 
 [onedrive](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/xieenze_connect_hku_hk/Ept_oetyUGFCsZTKiL_90kUBy5jmPV65O5rJInsnRCDWJQ?e=CvGohw)
+)
 
 Example: evaluate ```SegFormer-B1``` on ```ADE20K```:
 
