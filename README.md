@@ -109,10 +109,10 @@ evaluation purposes only. For business inquiries, please visit our website and s
 
 ## Citation
 ```
-@article{xie2021segformer,
+@inproceedings{xie2021segformer,
   title={SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers},
   author={Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M and Luo, Ping},
-  journal={arXiv preprint arXiv:2105.15203},
+  booktitle={Neural Information Processing Systems (NeurIPS)},
   year={2021}
 }
 ```
